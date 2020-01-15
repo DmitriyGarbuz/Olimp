@@ -1,0 +1,199 @@
+$moncerrat:   'Montserrat', sans-serif;
+
+
+.price {
+    background-position: right;
+    background-image: url(../img/Back-2.png);
+    background-size: 35% 100%;
+    background-repeat: no-repeat;
+    .h2-center{
+        margin-top: 5%;
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    h2{
+        font-family: $moncerrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 2.2rem;
+        line-height: 2.7rem; 
+        color: #1A1A1A; 
+        text-align: center;
+    }
+    .after-h2-center{
+        margin-top: 2%;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .after-h2 {
+        font-family: $moncerrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.38rem;
+        line-height: 1.94rem; 
+        text-align: center;
+        color: #7E7E7E;
+    }
+    .container{
+         .row {
+               margin-right: 5px;
+               margin-left: 5px;
+               width: 100%;
+               height: 4rem;
+               background: #FFFFFF;
+               box-shadow: 0rem 0.27rem 1.1rem rgba(0, 0, 0, 0.16);
+               border-radius: 2.2rem;
+               margin: 1%;
+               .abon {
+               font-family: $moncerrat;
+               font-style: normal;
+               font-weight: 600;
+               font-size: 1.7rem;
+               line-height: 4rem;
+               color: #7E7E7E;
+               margin-left: 2%;
+               }
+               .cost {
+               margin-right: 2%;
+               font-family: $moncerrat;
+               font-style: normal;
+               font-weight: bold;
+               font-size: 2rem;
+               line-height: 4rem;
+               color: #2877CC;
+               }
+            }
+        }
+#row-column-blok-2{
+    .container {
+        display: none;
+    }
+   }
+ 
+
+
+    @media screen and (max-width: 1576px) {
+       .col-3{
+            p {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+    }
+    }
+    @media screen and (max-width: 1450px) {
+        .col-3{
+             p {
+             margin-left: 4rem;
+             margin-right: 4rem;
+         }
+     }
+     }
+     @media screen and (max-width: 1325px) {
+        .col-3{
+             p {
+             margin-left: 3rem;
+             margin-right: 3rem;
+         }
+     }
+     }
+
+    @media screen and (max-width: 1180px) {
+        .mob-col-3-center{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        #row-column-blok-2{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .justify-content-center{
+                justify-content: center;
+            }
+            .container {
+                display: block;
+            }
+            .col-3{
+                flex: 0 0 100%;
+                flex-basis: 100%;
+                max-width: 100%;
+                width: 98%;
+                height: 100%;
+                img {
+                    margin-top: 5%;
+                }
+                .btn {
+                    margin-bottom: 5%;
+                }
+                    }
+    }
+    .container{
+        .row{
+.abon {
+        font-size: 1.2rem;
+        line-height: 4rem;
+        }
+    .cost {
+        font-size: 1.5rem;
+        line-height: 4rem;
+        }
+    }
+}
+}
+@media screen and (max-width: 800px) {
+    .h2-center{
+        width: 100%;
+    }
+    .after-h2-center{
+        width: 100%;
+    }
+    .container{
+    .row{
+        height: 3rem;
+.abon {
+        font-size: 0.9rem;
+        line-height: 3rem;
+        }
+.cost {
+        font-size: 0.9rem;
+        line-height: 3rem;
+        }  
+    }
+}
+}
+@media screen and (max-width: 500px) {
+    .h2-center{
+      width: 100%;
+    }
+    h2 {
+        font-size: 1.4rem;
+        line-height: 1.8rem; 
+    }
+    .after-h2-center {
+        width: 100%;
+    }
+    .after-h2 {
+        font-size: 0.92rem;
+        line-height: 1.2rem;
+    }
+  
+  .container{
+    .row{
+        height: 2rem;
+.abon {
+        font-size: 0.6rem;
+        line-height: 2rem;
+        }
+.cost {
+        font-size: 0.6rem;
+        line-height: 2rem;
+        }  
+    }
+}
+}
+}
