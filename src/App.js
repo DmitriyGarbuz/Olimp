@@ -2,16 +2,21 @@ import React from 'react';
 //import img from './img/photo.jpg'
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './home/Home';
-import Users from './users/Users';
-import OneUser from './user/OneUser';
+import About from './about/About';
+import Gallery from './gallery/Gallery';
+import Price from './price/Price';
+import Contact from './contact/Contact';
+
 
 
 const App = (props) => {
     return (
      <Router>
-         <Route exact path = '/' component = {Home} />
-         <Route exact path = '/user' component = {Users} />
-         <Route path = '/user/:id' component = {OneUser}/>
+         <Route path = '/' component = {Home} />
+         <Route path = '/about' component = {About} />
+         <Route path = '/gallery' component = {Gallery} />
+         <Route path = '/price' component = {Price} />
+         <Route path = '/contacts' component = {Contact} />
      </Router>
     )};
 
