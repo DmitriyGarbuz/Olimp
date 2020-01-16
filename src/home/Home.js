@@ -8,31 +8,44 @@ import Price from '../price/Price';
 import Contact from '../contact/Contact';
 
 class Home extends Component {
+  _isMounted = false;
     constructor(props){
-        super(props)
+        super(props)      
         this.state = {
-          display: ''
+          scrollTop: 0,          
+          display: 'none'
     }
     
     }
-stylechange = () => {
-    if (window.scrollTop() === 0) {
-      this.setState({display: 'none'});
-    } else {
-      this.setState({display: 'block'});   
+    componentDidMount() {
+    
+this.onScroll = () => {
+  window.addEventListener('scroll', () => {
+    if (this.state.scrollTop > 35) {
+      this.setState({display: 'block'});
+      return 
+    }else{
+    let a = this.state.scrollTop + 1;
+     this.setState({scrollTop: a , display: 'none'});
+   }});
   }
 
+this.onScroll();
 
+  this.clickUp = () => {
+  this.setState({display: 'none', scrollTop: 0});
 }
-changeUp = () => {
-  this.setState({up: true});
-}
+    }
 
+
+    componentWillUnmount() {
+      this._isMounted = false; 
+    }
     render () {
       
-        return (<div>         
-<div className="heder">
-<div className="row justify-content-center"><ul className="nav" id="up" display={this.state.display}>
+        return (<div >         
+<div className="heder" >
+<div className="row justify-content-center"><ul className="nav" id="up" >
   <li className="nav-item">
     <a className="nav-link" href="#about">Наша Команда</a>
   </li>
@@ -73,7 +86,7 @@ changeUp = () => {
 <Gallery/>
 <Price/>
 <Contact/>
-<a href="#up" id="btn-up" up={this.state.up}><img src={Up} alt="up"></img></a>
+<a href="#up" id="btn-up" onClick={this.clickUp} style={{display: this.state.display}}><img src={Up} alt="up"></img></a>
         </div>)
     }
 }
