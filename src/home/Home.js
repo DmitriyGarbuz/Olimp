@@ -72,7 +72,7 @@ this.onScroll();
 
         <h1>Спортивный клуб <b>OLIMP</b></h1>
         <p className="after-h1"><b>Лучшее место для работы над своим телом!</b></p>
-        <p className="after-h1">Мы создали <b>современный</b> тренажерный зал, в котором есть все необходимое для <b>эффектных</b> и <b>комфортных</b> тренировок.</p>
+        <p className="after-h1">Наш <b>опытный</b> тренерский состав поможет Вам добиться <b>максимальных</b> результатов!</p>
      </div>
      <div className="col-4 ">
        <div className="col align-self-center" id="mobile">
